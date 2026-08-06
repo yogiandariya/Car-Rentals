@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Rentals
 
 Manage Rentals in Frappe
@@ -38,3 +39,6 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
+=======
+# Car-Rentals
+>>>>>>> 273b5b75d8ddc130a30aece0e3f74b301ff54492
