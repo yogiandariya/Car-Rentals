@@ -13,10 +13,10 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestDriver(IntegrationTestCase):
-    """
-    Integration tests for Driver.
-    Use this class for testing interactions between multiple components.
-    """
+class IntegrationTestRideOrder(IntegrationTestCase):
+	"""
+	Integration tests for RideOrder.
+	Use this class for testing interactions between multiple components.
+	"""
 
-    pass
+	pass

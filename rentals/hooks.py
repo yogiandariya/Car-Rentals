@@ -12,13 +12,13 @@ app_license = "mit"
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
-# 	{
-# 		"name": "rentals",
-# 		"logo": "/assets/rentals/logo.png",
-# 		"title": "Rentals",
-# 		"route": "/rentals",
-# 		"has_permission": "rentals.api.permission.has_app_permission"
-# 	}
+#     {
+#         "name": "rentals",
+#         "logo": "/assets/rentals/logo.png",
+#         "title": "Rentals",
+#         "route": "/rentals",
+#         "has_permission": "rentals.api.permission.has_app_permission"
+#     }
 # ]
 
 # Includes in <head>
@@ -61,7 +61,7 @@ app_license = "mit"
 
 # website user home page (by Role)
 # role_home_page = {
-# 	"Role": "home_page"
+#     "Role": "home_page"
 # }
 
 # Generators
@@ -78,8 +78,8 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "rentals.utils.jinja_methods",
-# 	"filters": "rentals.utils.jinja_filters"
+#     "methods": "rentals.utils.jinja_methods",
+#     "filters": "rentals.utils.jinja_filters"
 # }
 
 # Installation
@@ -127,11 +127,11 @@ app_license = "mit"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#     "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#     "Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # Document Events
@@ -139,32 +139,32 @@ app_license = "mit"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+#     "*": {
+#         "on_update": "method",
+#         "on_cancel": "method",
+#         "on_trash": "method"
+#     }
 # }
 
 # Scheduled Tasks
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"rentals.tasks.all"
-# 	],
-# 	"daily": [
-# 		"rentals.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"rentals.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"rentals.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"rentals.tasks.monthly"
-# 	],
+#     "all": [
+#         "rentals.tasks.all"
+#     ],
+#     "daily": [
+#         "rentals.tasks.daily"
+#     ],
+#     "hourly": [
+#         "rentals.tasks.hourly"
+#     ],
+#     "weekly": [
+#         "rentals.tasks.weekly"
+#     ],
+#     "monthly": [
+#         "rentals.tasks.monthly"
+#     ],
 # }
 
 # Testing
@@ -177,21 +177,21 @@ app_license = "mit"
 #
 # Specify custom mixins to extend the standard doctype controller.
 # extend_doctype_class = {
-# 	"Task": "rentals.custom.task.CustomTaskMixin"
+#     "Task": "rentals.custom.task.CustomTaskMixin"
 # }
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "rentals.event.get_events"
+#     "frappe.desk.doctype.event.event.get_events": "rentals.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "rentals.task.get_dashboard_data"
+#     "Task": "rentals.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -217,38 +217,38 @@ app_license = "mit"
 # --------------------
 
 # user_data_fields = [
-# 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
-# 		"partial": 1,
-# 	},
-# 	{
-# 		"doctype": "{doctype_3}",
-# 		"strict": False,
-# 	},
-# 	{
-# 		"doctype": "{doctype_4}"
-# 	}
+#     {
+#         "doctype": "{doctype_1}",
+#         "filter_by": "{filter_by}",
+#         "redact_fields": ["{field_1}", "{field_2}"],
+#         "partial": 1,
+#     },
+#     {
+#         "doctype": "{doctype_2}",
+#         "filter_by": "{filter_by}",
+#         "partial": 1,
+#     },
+#     {
+#         "doctype": "{doctype_3}",
+#         "strict": False,
+#     },
+#     {
+#         "doctype": "{doctype_4}"
+#     }
 # ]
 
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
-# 	"rentals.auth.validate"
+#     "rentals.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
 # export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
-# 	"Logging DocType Name": 30  # days to retain logs
+#     "Logging DocType Name": 30  # days to retain logs
 # }
 
 # Translation

@@ -4,18 +4,23 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "autoincrement",
- "creation": "2026-08-05 13:09:34.584533",
+ "creation": "2026-08-07 11:01:04.996367",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "make",
   "model",
   "year",
   "license_plate",
-  "color",
-  "read_only_works"
+  "color"
  ],
  "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
   {
    "fieldname": "make",
    "fieldtype": "Data",
@@ -41,6 +46,7 @@
   {
    "fieldname": "license_plate",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "License Plate"
   },
   {
@@ -49,21 +55,15 @@
    "in_list_view": 1,
    "label": "Color",
    "reqd": 1
-  },
-  {
-   "default": "my_read_only_values",
-   "fieldname": "read_only_works",
-   "fieldtype": "Read Only",
-   "label": "Read Only Works"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-05 16:48:51.727870",
+ "modified": "2026-08-07 11:20:01.917688",
  "modified_by": "Administrator",
  "module": "Rentals",
- "name": "Vehicles",
+ "name": "Vehicle",
  "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
@@ -82,7 +82,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }
