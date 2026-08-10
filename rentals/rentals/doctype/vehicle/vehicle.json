@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "autoincrement",
@@ -13,7 +14,13 @@
   "model",
   "year",
   "license_plate",
-  "color"
+  "color",
+  "is_published",
+  "route",
+  "vehicle_image",
+  "insurance_expiry",
+  "status",
+  "condition"
  ],
  "fields": [
   {
@@ -55,12 +62,46 @@
    "in_list_view": 1,
    "label": "Color",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Image"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOut of Service\nSold\nCrushed"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Rating",
+   "label": "Condition"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-07 11:20:01.917688",
+ "modified": "2026-08-10 16:20:34.994886",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -80,6 +121,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,

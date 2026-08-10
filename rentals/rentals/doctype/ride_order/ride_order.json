@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:RO-{MM}-{YYYY}-{##}",
  "creation": "2026-08-06 16:31:18.605459",
@@ -11,6 +12,7 @@
   "contact_number",
   "pickup_time",
   "link_tcgf",
+  "route",
   "column_break_edwt",
   "status",
   "pickup_address",
@@ -77,13 +79,19 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-08-07 17:58:23.190761",
+ "modified": "2026-08-10 13:29:20.703729",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",
@@ -103,6 +111,7 @@
    "write": 1
   }
  ],
+ "route": "vehicle",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",

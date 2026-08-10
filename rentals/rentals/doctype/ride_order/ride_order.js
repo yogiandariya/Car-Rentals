@@ -23,9 +23,9 @@ frappe.ui.form.on("Ride Order",{
             //save the form
                 frm.save();
             // frappe.show_alert("It works!")
-            })
-            frm.add_custom_button("Accept", () => {
-            //status => Accpeted
+            },"Actions")
+            frm.add_custom_button("Reject", () => {
+            //status => Rejected
                 frm.set_value("status", "Rejected");
             //save the form
                 frm.save();
