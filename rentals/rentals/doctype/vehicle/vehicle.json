@@ -20,7 +20,10 @@
   "vehicle_image",
   "insurance_expiry",
   "status",
-  "condition"
+  "condition",
+  "summary",
+  "get_summary",
+  "audit_completed"
  ],
  "fields": [
   {
@@ -95,13 +98,29 @@
    "fieldname": "condition",
    "fieldtype": "Rating",
    "label": "Condition"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "default": "1",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed?"
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-10 16:20:34.994886",
+ "modified": "2026-08-12 17:40:57.055907",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -119,6 +138,34 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Manager",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1
   }
  ],
  "route": "cars",
