@@ -54,7 +54,6 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name",
-   "options": "f\"{doc.first_name} {doc.last_name}\"",
    "read_only": 1
   }
  ],
@@ -62,7 +61,7 @@
  "image_field": "profile_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-05 16:52:29.296886",
+ "modified": "2026-08-14 14:53:43.891703",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Driver",

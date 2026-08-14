@@ -11,6 +11,7 @@
  "field_order": [
   "title",
   "make",
+  "type",
   "model",
   "year",
   "license_plate",
@@ -114,13 +115,19 @@
    "fieldname": "audit_completed",
    "fieldtype": "Check",
    "label": "Audit Completed?"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-12 17:40:57.055907",
+ "modified": "2026-08-14 13:14:38.334112",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",

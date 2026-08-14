@@ -5,6 +5,14 @@ app_description = "Manage Rentals in Frappe"
 app_email = "yogi@frappe.io"
 app_license = "mit"
 
+# fixtures = ["Vehicle Type","Rentals Settings"]
+fixtures = [
+    {
+        "dt": "Vehicle Type",
+        "filters":
+            ["is_standard", "=", 1]
+    }
+]
 # Apps
 # ------------------
 
@@ -126,7 +134,10 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
+permission_query_conditions = { 
+    "Vehicle": "rentals.api.get_query_conditions_for_vehicle",
+}
+#  permission_query_conditions = {
 #     "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #

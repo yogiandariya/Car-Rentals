@@ -1,0 +1,26 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "is_standard": 1,
+  "modified": "2026-08-14 13:21:05.063885",
+  "name": "Sedan"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "is_standard": 1,
+  "modified": "2026-08-14 13:20:58.816116",
+  "name": "SUV"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "is_standard": 1,
+  "modified": "2026-08-14 13:20:48.416251",
+  "name": "HetchBack"
+ }
+]
